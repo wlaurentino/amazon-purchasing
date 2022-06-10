@@ -1,5 +1,5 @@
 {    "baseUrl": "https://www.amazon.com.br",
     "chromeWebSecurity": false,
     "experimentalSessionAndOrigin": true
+    projectId: "nq6ai3"
 }
-projectId: "nq6ai3"
