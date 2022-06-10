@@ -10,7 +10,7 @@ describe('acessar página e logar', function () {
             password: 'Lauren!2112'
         }
 
-        before(function(){
+        beforeEach(function(){
             cy.loginUser2(user)
 
         })
