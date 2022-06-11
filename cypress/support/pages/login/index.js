@@ -7,8 +7,8 @@ class loginPage {
 
         cy.visit('/')
         cy.title()
-            .should('eq', 'Amazon.com.br | Tudo pra você, de A a Z.')
-            .and('eq', 'Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais.')
+            .should('Amazon.com.br | Tudo pra você, de A a Z.')
+            .and('Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais.')
             cy.visit('/')
             cy.get('input[id="twotabsearchtextbox"]')
                 .should('be.visible')
