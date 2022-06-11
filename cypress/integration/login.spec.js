@@ -18,7 +18,6 @@ describe('acessar página e logar', function () {
         it('deve acessar a página e logar com sucesso', function () {
 
             cy.visit('/')
-            cy.wait(4000)
     
         })
 

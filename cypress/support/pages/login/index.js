@@ -8,6 +8,7 @@ class loginPage {
         cy.visit('/')
         cy.title()
             .should('eq', 'Amazon.com.br | Tudo pra você, de A a Z.')
+            .and('eq', 'Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais.')
             cy.visit('/')
             cy.get('input[id="twotabsearchtextbox"]')
                 .should('be.visible')
@@ -32,7 +33,6 @@ class loginPage {
         cy.get('span[id=nav-link-accountList-nav-line-1]')
             .should('be.visible')
             .contains('Olá, William')
-        cy.wait(4000)
     }
 
 
