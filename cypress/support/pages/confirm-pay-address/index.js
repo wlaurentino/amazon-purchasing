@@ -12,21 +12,18 @@ class confirmPayAddressBuy {
     confirmAddress() {
 
         cy.get(el.confirmAddress)
-            .should('be.visible')
-        cy.contains('Estr. do Colégio 144')
+            .click()
             .log()
 
     }
 
     buy() {
 
-        cy.get('span[id=submitOrderButtonId]')
+        cy.get('span[data-cel-widget="submitOrderButtonId"]')
             .click()
 
     }
 
 
 }
-
-
 export default new confirmPayAddressBuy()

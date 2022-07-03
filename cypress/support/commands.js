@@ -25,6 +25,7 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 import loginPage from './pages/login'
+import 'cypress-iframe'
 
 /* Cypress.Commands.add('loginUser', function(user){
 

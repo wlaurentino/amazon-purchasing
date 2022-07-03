@@ -1,6 +1,6 @@
 exports.el = {
 
     confirmPayMethod: ('span[id=orderSummaryPrimaryActionBtn]'),
-    confirmAddress: ('div[class=displayAddressDiv]')
+    confirmAddress: ('input[data-testid=Address_selectBillToThisAddress]')
 
 }

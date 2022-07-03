@@ -1,17 +1,17 @@
 import { el } from './elements'
 
-class buscaSelecionaItem {
+class searchSelectItem {
 
-    busca() {
+    search() {
         cy.get(el.searchItem)
             .type(el.item)
     }
 
-    seleciona() {
+    select() {
         cy.get(el.selectItem)
             .click()
     }
 
 }
 
-export default new buscaSelecionaItem()
+export default new searchSelectItem()

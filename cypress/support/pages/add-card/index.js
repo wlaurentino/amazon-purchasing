@@ -1,4 +1,16 @@
 import { el } from './elements'
+import 'cypress-iframe'
+
+const getIframe = () => {
+    // get the iframe > document > body
+    // and retry until the body element is not empty
+    return cy
+        .get('iframe[class*="apx-secure-iframe"]')
+        .its('0.contentDocument.body').should('not.be.empty')
+        // wraps "body" DOM element to allow
+        // chaining more Cypress commands, like ".find(...)"
+        .then(cy.wrap)
+}
 
 class addCard {
 
@@ -10,9 +22,7 @@ class addCard {
 
     addCardNum() {
 
-        cy.frameLoaded('iframe[class*="apx-secure-iframe"]')
-
-        cy.iframe()
+         getIframe()
             .find(el.addCardNum)
             .type(el.cardNum)
 
@@ -20,7 +30,7 @@ class addCard {
 
     addCardName() {
 
-        cy.iframe()
+        getIframe()
             .find(el.addCardName)
             .type(el.cardName)
 
@@ -28,25 +38,25 @@ class addCard {
 
     addCardExpMonth() {
 
-        cy.iframe()
+        getIframe()
             .find(el.addCardExpMonth)
-            .select('8', { force: true })
+            .select('7', { force: true })
             .log()
 
     }
 
     addCardExpYear() {
 
-        cy.iframe()
+        getIframe()
             .find(el.addCardExpYear)
-            .select('2029', { force: true })
+            .select('2030', { force: true })
             .log()
 
     }
 
     addCardVerifNum() {
 
-        cy.iframe()
+        getIframe()
             .find(el.addCardVerifNum)
             .wait(4000)
             .type(el.cardVerifNum)
@@ -55,7 +65,7 @@ class addCard {
 
     addCardFrame() {
 
-        cy.iframe()
+        getIframe()
             .find(el.addCardFrame)
             .click()
 
