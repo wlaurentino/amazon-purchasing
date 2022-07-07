@@ -26,22 +26,21 @@ describe('login', function () {
 
         })
 
-        /* it('deve logar com sucesso', function () {
-
-            cy.visit('/')
-
-        }) */
-
         it('purchasing item', function () {
 
+            //visit webpage
             cy.visit('/')
 
+            //searching Item
             searchSelectItem.search()
 
+            //selecting Item
             searchSelectItem.select()
 
+            //adding Item
             addCheckOut.addItem()
 
+            //checkingout Item
             addCheckOut.checkOutItem()
 
             //adding credit card

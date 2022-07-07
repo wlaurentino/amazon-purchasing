@@ -39,7 +39,24 @@ Cypress.Commands.add('loginUser2', (user) => {
         loginPage.go()
         loginPage.form(user)
     })
-  })
+})
+
+/*
+const COMMAND_DELAY = 10;
+
+
+for (const command of ['visit', 'click', 'trigger', 'type', 'clear', 'reload', 'contains']) {
+    Cypress.Commands.overwrite(command, (originalFn, ...args) => {
+        const origVal = originalFn(...args);
+
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                resolve(origVal);
+            }, COMMAND_DELAY);
+        });
+    });
+}
+*/
 
 require("cypress-xpath");
 require('cypress-iframe');

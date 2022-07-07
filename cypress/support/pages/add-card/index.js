@@ -58,7 +58,7 @@ class addCard {
 
         getIframe()
             .find(el.addCardVerifNum)
-            .wait(4000)
+            .wait(2000)
             .type(el.cardVerifNum)
 
     }

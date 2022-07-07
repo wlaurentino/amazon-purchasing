@@ -12,8 +12,7 @@ class confirmPayAddressBuy {
     confirmAddress() {
 
         cy.get(el.confirmAddress)
-            .click()
-            .log()
+           .log()
 
     }
 
