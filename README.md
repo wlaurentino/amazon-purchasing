@@ -1,27 +1,27 @@
-# Teste Funcional em Cypress - Compra na Amazon
-Olá pessoal,
+# Functional Tests on Cypress - Purchasing on Amazon
+Hi there,
 
-Esse foi o meu primeiro código desenvolvido de forma autônoma para por em prática os conhecimentos do framework de testes [Cypress](https://www.cypress.io/).
+This was my first code develop to practice what I've learnt about Cypress [Cypress](https://www.cypress.io/).
 
-O sistema a ser testado é a página web da famosa loja online Amazon. 
-Foram utilizadas as ferramentas [VSCode](https://code.visualstudio.com/), Node.JS, [Cypress](https://www.cypress.io/) e Linguagem Javascript, 
+The system to be tested is the web page of the famous online store Amazon.
+Tools that I used: [VSCode](https://code.visualstudio.com/), Node.JS, [Cypress](https://www.cypress.io/) e Linguagem Javascript, 
 
-# Resumo:
-O teste é composto de arquivos com as informações pessoas do usuário, necessárias para efetuar o teste e de um arquivo que efetua todo o processo de compra validado pelo teste, que é divido nos seguintes testes de caso:
--   Acessar o site
--   Efetuar login
--   Inserir o email do usuário
--   Inserir a senha do usuário
--   Buscar item
--   Selecionar item
--   Adicionar item no carrinho
--   Fechar pedido
--   Adicionar cartão de crédito
--   Inserir os dados do cartão de crédito
--   Confirmar esse método de pagamento
--   Confirmar esse endereço de entrega
--   Finalizar pedido
+# Summary:
+The tests has files containig the user's data which are required to execute the tests and a file to execute the whole purchasing process validaded by the test, the tests are separed by the following test cases:
+-   Access the web page
+-   Login the page
+-   Insert user's email
+-   Insert user's password
+-   Search Item
+-   Select Item
+-   Add item in the cart
+-   Confirm order
+-   Add credit card
+-   Insert credit card's data
+-   Confirm payment method
+-   Confirm delivery address
+-   Checkout order
 
-Ao finalizar o teste, o Cypress fornece um log e exibe a execução junto ao navegador. O teste foi executado em 45 segundos. 
+In the end of the test, Cypress creates a log that shows the tests executed on browser. The whole test took 45 seconds. 
 
-Criei este repositório para compartilhar como executei esse caso de teste utilizando o Cypress. Fique a vontade para compartilhar ou relatar caso veja alguma issue.
+I've created this repository to share how I executed this test case using Cypress. Feel free to share or report any issue.
