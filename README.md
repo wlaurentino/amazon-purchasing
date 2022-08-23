@@ -1,7 +1,7 @@
 # Functional Tests on Cypress - Purchasing on Amazon
 Hi there,
 
-This was my first code develop to practice what I've learnt about Cypress [Cypress](https://www.cypress.io/).
+This was my first code develop to practice what I've learnt about [Cypress](https://www.cypress.io/).
 
 The system to be tested is the web page of the famous online store Amazon.
 Tools that I used: [VSCode](https://code.visualstudio.com/), Node.JS, [Cypress](https://www.cypress.io/) e Linguagem Javascript, 
