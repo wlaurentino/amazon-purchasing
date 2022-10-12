@@ -7,7 +7,7 @@ describe('acessar página e logar', function () {
 
         const user = {
             email: 'gama.william@gmail.com',
-            password: 'Lauren!2112'
+            password: 'YOUR_PASSWORD'
         }
 
         beforeEach(function(){
